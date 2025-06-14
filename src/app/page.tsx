@@ -1,103 +1,108 @@
-import Image from "next/image";
+import Header from '@/components/Header';
+import EventCard from '@/components/EventCard';
+import NewsArticlePreview from '@/components/NewsArticlePreview';
+import newsData from '@/mock-data/news.json';
+import eventsData from '@/mock-data/events.json';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Header />
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden luxury-gradient">
+          <div className="container mx-auto px-8 py-32">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-6xl md:text-7xl font-light tracking-tight text-gray-800 mb-8">
+                Service Above Self
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Join leaders, exchange ideas, and take action to make a positive impact in our community and beyond.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="px-8 py-4 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-all duration-300 font-medium text-lg">
+                  Learn More
+                </button>
+                <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 font-medium text-lg">
+                  Join Today
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-gray-100/30"></div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        {/* About Section */}
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-light text-gray-800 mb-6">A Legacy of Service</h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                  For over a century, Rotary has connected people from all continents and cultures to advance world understanding, goodwill, and peace.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-12">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-10 h-10 bg-amber-500 rounded-full"></div>
+                  </div>
+                  <h3 className="text-2xl font-light text-gray-800 mb-4">Community Impact</h3>
+                  <p className="text-gray-600 leading-relaxed">Making a difference in local communities through service projects and initiatives.</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-10 h-10 bg-blue-500 rounded-full"></div>
+                  </div>
+                  <h3 className="text-2xl font-light text-gray-800 mb-4">Global Network</h3>
+                  <p className="text-gray-600 leading-relaxed">Connecting with over 1.4 million members worldwide to create lasting change.</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-10 h-10 bg-green-500 rounded-full"></div>
+                  </div>
+                  <h3 className="text-2xl font-light text-gray-800 mb-4">Leadership Development</h3>
+                  <p className="text-gray-600 leading-relaxed">Developing leadership skills and professional connections through fellowship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Upcoming Events */}
+        <section className="py-24 bg-gray-50">
+          <div className="container mx-auto px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-light text-gray-800 mb-6">Upcoming Events</h2>
+                <p className="text-xl text-gray-600">Join us for meaningful gatherings and service opportunities</p>
+              </div>
+              <div className="grid gap-8">
+                {eventsData.map(event => (
+                  <EventCard key={event.slug} {...event} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Latest News */}
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-light text-gray-800 mb-6">Latest News</h2>
+                <p className="text-xl text-gray-600">Stay updated with our community impact and achievements</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-12">
+                {newsData.map(article => (
+                  <NewsArticlePreview key={article.slug} {...article} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
