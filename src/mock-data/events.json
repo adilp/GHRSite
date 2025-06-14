@@ -1,18 +1,26 @@
 [
   {
-    "slug": "weekly-meeting-nov-1",
-    "title": "Weekly Luncheon: Speaker on Local Economy",
-    "eventDate": "2023-11-01T12:00:00Z",
-    "location": "The Grand Hotel Ballroom",
-    "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "<p>Join us for our weekly meeting. This week's speaker is Jane Doe, a leading local economist, who will discuss the future of small businesses in our city.</p>"
+    "slug": "district-conference-2025",
+    "title": "District 5240 Annual Conference",
+    "eventDate": "2025-07-12T09:00:00Z",
+    "location": "The Ritz-Carlton, Marina del Rey",
+    "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "<p>Join Rotarians from across the district for a weekend of inspiration, fellowship, and service. Featuring keynote speakers, breakout sessions on leadership development, and the annual awards gala recognizing outstanding service projects.</p><p>Early bird registration available until June 15th.</p>"
   },
   {
-    "slug": "food-bank-volunteering-nov-15",
-    "title": "Food Bank Volunteering Day",
-    "eventDate": "2023-11-15T09:00:00Z",
-    "location": "City Food Bank, 123 Main St",
-    "imageUrl": "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "<p>Lend a hand as we sort and pack donations for families in need. This is a rewarding day of service and fellowship. Please sign up in advance.</p>"
+    "slug": "end-polio-now-gala",
+    "title": "End Polio Now Fundraising Gala",
+    "eventDate": "2025-06-28T18:00:00Z",
+    "location": "The Beverly Hills Hotel",
+    "imageUrl": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "<p>An elegant evening supporting Rotary's signature initiative to eradicate polio worldwide. Enjoy gourmet dining, live entertainment, and a silent auction featuring exclusive experiences and artwork.</p><p>All proceeds will be matched 2:1 by the Bill & Melinda Gates Foundation.</p>"
+  },
+  {
+    "slug": "rotaract-career-fair",
+    "title": "Rotaract Professional Development & Career Fair",
+    "eventDate": "2025-06-22T10:00:00Z",
+    "location": "UCLA Campus, Ackerman Union",
+    "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "<p>Connecting young professionals with career opportunities and mentorship. Features workshops on resume building, interview skills, and networking sessions with established Rotarians from various industries.</p><p>Open to all Rotaract members and guests aged 18-30.</p>"
   }
 ]

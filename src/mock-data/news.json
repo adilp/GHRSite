@@ -1,18 +1,26 @@
 [
   {
-    "slug": "new-playground-project",
-    "title": "Club Completes New Community Playground",
-    "publishedDate": "2023-10-15",
-    "imageUrl": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "excerpt": "Our dedicated members worked tirelessly over the weekend to build a safe and fun new playground at Central Park.",
-    "body": "<p>Full article content goes here. It was a great success, bringing together volunteers from all walks of life. The new equipment is state-of-the-art and designed for children of all ages.</p>"
+    "slug": "polio-vaccination-milestone",
+    "title": "Rotary Celebrates Historic Milestone: 3 Billion Children Vaccinated Against Polio",
+    "publishedDate": "2025-06-10",
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "In partnership with WHO, UNICEF, and the Gates Foundation, Rotary's End Polio Now campaign reaches unprecedented vaccination numbers.",
+    "body": "<p>Today marks a historic achievement in global health as Rotary International announces that over 3 billion children have been vaccinated against polio since the launch of the PolioPlus program in 1985.</p><p>\"This milestone demonstrates what's possible when organizations unite for a common cause,\" said Rotary International President Gordon McInally. \"We're closer than ever to eradicating polio completely, with only two endemic countries remaining.\"</p><p>The achievement comes as Rotary members worldwide continue their fundraising efforts, having contributed more than $2.6 billion to the cause. Every dollar raised is matched 2:1 by the Bill & Melinda Gates Foundation, tripling the impact of each donation.</p>"
   },
   {
-    "slug": "annual-fundraiser-success",
-    "title": "Annual Fundraiser Raises Record Amount",
-    "publishedDate": "2023-10-01",
-    "imageUrl": "https://images.unsplash.com/photo-1561414927-6d86591d0c4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "excerpt": "Thanks to our generous community, we raised over $50,000 for our scholarship fund this year.",
-    "body": "<p>The gala was a fantastic event, featuring a silent auction and a keynote speech from Mayor Johnson. All proceeds will go directly to funding higher education for local students.</p>"
+    "slug": "clean-water-project-kenya",
+    "title": "Local Club Partners with Kenyan Community to Bring Clean Water to 5,000 Residents",
+    "publishedDate": "2025-05-28",
+    "imageUrl": "https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "Through a Rotary Global Grant, our club helped fund and install water purification systems in rural Kenya, transforming lives and health outcomes.",
+    "body": "<p>After two years of planning and collaboration, our Rotary club celebrated the completion of a life-changing water project in Makueni County, Kenya. The project, funded through a $75,000 Rotary Global Grant, has brought clean, safe drinking water to over 5,000 residents in three villages.</p><p>\"Access to clean water is a basic human right,\" said project lead Sarah Thompson. \"This project will reduce waterborne diseases by an estimated 80% and free up hours each day that children previously spent fetching water, allowing them to attend school instead.\"</p><p>The project included drilling three new boreholes, installing solar-powered pumps, and establishing water kiosks managed by local community groups. Rotarians from our club traveled to Kenya to assist with installation and provide training on maintenance and sustainability.</p>"
+  },
+  {
+    "slug": "youth-exchange-anniversary",
+    "title": "Celebrating 50 Years of Youth Exchange: Transforming Lives Through Cultural Understanding",
+    "publishedDate": "2025-05-15",
+    "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "Our district marks five decades of the Rotary Youth Exchange program, having hosted over 2,000 students from 45 countries.",
+    "body": "<p>This year marks the 50th anniversary of our district's participation in the Rotary Youth Exchange program, one of the world's most respected cultural exchange initiatives. Since 1975, we've facilitated life-changing experiences for more than 2,000 young people.</p><p>\"The Youth Exchange program creates global citizens and future leaders,\" explained District Youth Exchange Chair Michael Chen. \"Many of our alumni have gone on to become Rotarians themselves, continuing the cycle of service and international understanding.\"</p><p>To celebrate this milestone, the district is hosting a reunion gala on August 15th, bringing together host families, exchange students, and program alumni from across five decades. The event will also launch a new scholarship fund to ensure the program remains accessible to students from all economic backgrounds.</p>"
   }
 ]

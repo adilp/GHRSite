@@ -1,13 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #2c2c2c;
-  --primary: #1a365d;
-  --accent: #d4af37;
-  --light-gray: #f7f7f7;
-  --medium-gray: #e2e8f0;
-  --text-secondary: #64748b;
+  /* Rotary Official Colors */
+  --rotary-royal-blue: #003da5;
+  --rotary-gold: #f7a81b;
+  --rotary-azure: #019fcb;
+  --rotary-sky-blue: #0080c0;
+  
+  /* Luxury Design System */
+  --background: #ffffff;
+  --background-secondary: #fafbfc;
+  --foreground: #1a1a1a;
+  --primary: var(--rotary-royal-blue);
+  --accent: var(--rotary-gold);
+  --secondary: var(--rotary-azure);
+  
+  /* Grays */
+  --light-gray: #f8f9fa;
+  --medium-gray: #e9ecef;
+  --border-gray: #dee2e6;
+  --text-secondary: #6c757d;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
 @theme inline {
@@ -24,19 +42,112 @@ body {
   line-height: 1.6;
 }
 
+/* Luxury Gradients */
 .luxury-gradient {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(180deg, var(--background) 0%, var(--background-secondary) 100%);
 }
 
-.card-shadow {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.rotary-gradient {
+  background: linear-gradient(135deg, var(--rotary-royal-blue) 0%, var(--rotary-azure) 100%);
 }
 
-.card-hover {
+.gold-gradient {
+  background: linear-gradient(135deg, var(--rotary-gold) 0%, #fbb040 100%);
+}
+
+/* Premium Card Styles */
+.luxury-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Glassmorphism Effects */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Typography */
+.heading-luxury {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Image Overlays */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover::after {
+  opacity: 1;
+}
+
+/* Buttons */
+.btn-luxury {
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 500;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.card-hover:hover {
+.btn-primary {
+  background: var(--rotary-royal-blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--rotary-sky-blue);
   transform: translateY(-2px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--rotary-royal-blue);
+  border: 2px solid var(--rotary-royal-blue);
+}
+
+.btn-secondary:hover {
+  background: var(--rotary-royal-blue);
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }
