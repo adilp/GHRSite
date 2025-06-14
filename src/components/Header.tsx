@@ -8,16 +8,23 @@ export default function Header({ isLoggedIn = false }: HeaderProps) {
   return (
     <header className='glass-effect fixed top-0 left-0 right-0 z-50 border-b border-gray-200/20'>
       <nav className='container mx-auto px-8 py-5 flex justify-between items-center'>
-        <Link href='/' className='flex items-center space-x-3 group'>
-          {/* Rotary Wheel Logo Placeholder */}
-          <div className='w-10 h-10 bg-gradient-to-br from-[#003da5] to-[#019fcb] rounded-full flex items-center justify-center transform group-hover:rotate-180 transition-transform duration-500'>
-            <span className='text-white font-bold text-xl'>R</span>
-          </div>
-          <div>
-            <h1 className='text-2xl font-light tracking-wide text-[#003da5] group-hover:text-[#019fcb] transition-colors'>
-              Greater Hoover Rotary Club
-            </h1>
-            <p className='text-xs text-gray-500 -mt-1'>Service Above Self</p>
+        <Link href='/' className='flex items-center space-x-4 group'>
+          <div className='flex items-center space-x-3'>
+            {/* Rotaract Logo Text */}
+            <div className='flex flex-col items-end'>
+              <h1 className='text-4xl font-bold text-[#17458f]'>Rotary</h1>
+              <div className='text-sm text-[#17458f] font-medium -mt-1'>
+                Club of Greater Hoover
+              </div>
+            </div>
+            {/* Rotary Wheel */}
+            <div className='relative'>
+              <img
+                src='/rotary-international-7.svg'
+                alt='Rotary International Wheel'
+                className='w-16 h-16 transform group-hover:rotate-180 transition-transform duration-500'
+              />
+            </div>
           </div>
         </Link>
 
