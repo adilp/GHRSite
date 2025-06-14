@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Header from '@/components/Header'
 import EventCard from '@/components/EventCard'
 import NewsArticlePreview from '@/components/NewsArticlePreview'
@@ -12,10 +13,14 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className='relative overflow-hidden'>
           {/* Background image with overlay */}
-          <div className='absolute inset-0'>
-            <img
+          <div className='absolute inset-0 blur-[8px]'>
+            <Image
               src='https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2070&auto=format&fit=crop'
+              // src='https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?q=80&w=3000&auto=format&fit=crop'
+              // src='https://images.unsplash.com/photo-1603478804503-dc909c7f5ce5?q=80&w=3070&auto=format&fit=crop'
               alt='Rotary meeting'
+              width={2070}
+              height={1200}
               className='w-full h-full object-cover'
             />
             <div className='absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent'></div>
@@ -178,7 +183,7 @@ export default function HomePage() {
                   Latest Updates
                 </h2>
                 <p className='text-xl text-gray-600'>
-                  Discover how we're making an impact in our community
+                  Discover how we&apos;re making an impact in our community
                 </p>
               </div>
               <div className='grid md:grid-cols-2 gap-12'>

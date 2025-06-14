@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {
   title: string;
@@ -12,9 +13,11 @@ export default function NewsArticlePreview({ title, imageUrl, excerpt, slug }: P
     <Link href={`/news/${slug}`} className="group block h-full">
       <article className="luxury-card h-full flex flex-col">
         <div className="relative aspect-[16/10] overflow-hidden image-overlay">
-          <img 
+          <Image 
             src={imageUrl} 
             alt={title} 
+            width={800}
+            height={500}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
           />
           {/* Category Badge */}

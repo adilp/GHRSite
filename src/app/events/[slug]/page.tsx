@@ -1,6 +1,7 @@
 'use client';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
 import eventsData from '@/mock-data/events.json';
 import Header from '@/components/Header';
 
@@ -26,7 +27,7 @@ export default function EventDetailPage() {
             <p>{new Date(event.eventDate).toLocaleString('en-US', { dateStyle: 'full', timeStyle: 'short' })}</p>
             <p>{event.location}</p>
           </div>
-          <img src={event.imageUrl} alt={event.title} className="w-full h-96 object-cover rounded-lg mb-8" />
+          <Image src={event.imageUrl} alt={event.title} width={1200} height={400} className="w-full h-96 object-cover rounded-lg mb-8" />
           
           {isLoggedIn && (
             <div className="mb-8">
