@@ -1,0 +1,30 @@
+[
+  {
+    "id": "annual-food-drive",
+    "title": "Annual Food Drive",
+    "description": "Our flagship community service project providing meals to local families in need during the holiday season.",
+    "image": "https://images.unsplash.com/photo-1593113616828-6f22bce17d5a?w=400&h=250&fit=crop",
+    "link": "/projects/annual-food-drive"
+  },
+  {
+    "id": "clean-water-initiative",
+    "title": "Clean Water Initiative",
+    "description": "Supporting global access to clean water through partnerships with international Rotary districts.",
+    "image": "https://images.unsplash.com/photo-1541919329513-35f7af297129?w=400&h=250&fit=crop",
+    "link": "/projects/clean-water-initiative"
+  },
+  {
+    "id": "literacy-program",
+    "title": "Community Literacy Program",
+    "description": "Reading mentorship and book donations to local schools to improve childhood literacy rates.",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop",
+    "link": "/projects/literacy-program"
+  },
+  {
+    "id": "youth-leadership",
+    "title": "Youth Leadership Development",
+    "description": "Empowering the next generation through leadership training and scholarship opportunities.",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
+    "link": "/projects/youth-leadership"
+  }
+]

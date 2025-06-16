@@ -6,95 +6,52 @@ type HeaderProps = {
 
 export default function Header({ isLoggedIn = false }: HeaderProps) {
   return (
-    <header className='glass-effect fixed top-0 left-0 right-0 z-50 border-b border-gray-200/20'>
-      <nav className='container mx-auto px-8 py-5 flex justify-between items-center'>
-        <Link href='/' className='flex items-center space-x-4 group'>
-          <div className='flex items-center space-x-3'>
-            {/* Rotaract Logo Text */}
-            <div className='flex flex-col items-end'>
-              <h1 className='text-4xl font-bold text-[#17458f]'>Rotary</h1>
-              <div className='text-sm text-[#17458f] font-medium -mt-1'>
-                Club of Greater Hoover
-              </div>
-            </div>
-            {/* Rotary Wheel */}
-            <div className='relative'>
-              <img
-                src='/rotary-international-7.svg'
-                alt='Rotary International Wheel'
-                className='w-16 h-16 transform group-hover:rotate-180 transition-transform duration-500'
-              />
+    <header className='glass-effect absolute top-0 left-0 right-0 z-50 border-b border-gray-200/20'>
+      <nav className='container mx-auto px-8 py-5 flex items-center'>
+        {/* Logo - Left */}
+        <Link href='/' className='flex items-center space-x-3 group'>
+          <img
+            src='/rotary-international-7.svg'
+            alt='Rotary International Wheel'
+            className='w-12 h-12 transform group-hover:rotate-180 transition-transform duration-500'
+          />
+          <div className='flex flex-col'>
+            <h1 className='text-2xl font-bold text-rotary-blue'>Rotary</h1>
+            <div className='text-xs text-rotary-blue font-medium -mt-1'>
+              Club of Greater Hoover
             </div>
           </div>
         </Link>
 
-        <div className='flex items-center space-x-8'>
+        {/* Navigation - Center */}
+        <div className='flex-1 flex justify-center items-center space-x-8'>
           <Link
             href='/'
-            className='text-gray-700 hover:text-[#003da5] font-medium transition-colors relative group'
+            className='text-gray-700 hover:text-rotary-blue font-medium transition-colors relative group'
           >
             Home
-            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#f7a81b] group-hover:w-full transition-all duration-300'></span>
+            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-rotary-gold group-hover:w-full transition-all duration-300'></span>
           </Link>
           <Link
             href='/news'
-            className='text-gray-700 hover:text-[#003da5] font-medium transition-colors relative group'
+            className='text-gray-700 hover:text-rotary-blue font-medium transition-colors relative group'
           >
             News
-            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#f7a81b] group-hover:w-full transition-all duration-300'></span>
+            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-rotary-gold group-hover:w-full transition-all duration-300'></span>
           </Link>
           <Link
             href='/events'
-            className='text-gray-700 hover:text-[#003da5] font-medium transition-colors relative group'
+            className='text-gray-700 hover:text-rotary-blue font-medium transition-colors relative group'
           >
             Events
-            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#f7a81b] group-hover:w-full transition-all duration-300'></span>
+            <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-rotary-gold group-hover:w-full transition-all duration-300'></span>
           </Link>
-
-          {isLoggedIn ? (
-            <>
-              <Link href='/poc-dashboard' className='btn-luxury btn-primary'>
-                <svg
-                  className='w-4 h-4'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
-                  />
-                </svg>
-                Dashboard
-              </Link>
-              <button className='text-gray-600 hover:text-[#003da5] font-medium transition-colors'>
-                Logout
-              </button>
-            </>
-          ) : (
-            <Link
-              href='/login'
-              className='btn-luxury gold-gradient text-white hover:shadow-lg'
-            >
-              <svg
-                className='w-4 h-4'
-                fill='none'
-                stroke='currentColor'
-                viewBox='0 0 24 24'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth={2}
-                  d='M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1'
-                />
-              </svg>
-              Member Login
-            </Link>
-          )}
         </div>
+
+        {/* Donate Button - Right */}
+        <button className='bg-rotary-gold text-white px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition'>
+          Donate
+        </button>
       </nav>
     </header>
   )

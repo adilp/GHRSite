@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <!-- 
+        Hero Background SVG for Rotary Website
+        Concept: "Horizon of Service"
+        Colors: Rotary Blue (#005daa) and Rotary Gold (#f7a81b)
+    -->
+    <defs>
+        <!-- Gradient for the sky, from light blue to a very soft off-white -->
+        <linearGradient id="skyGradient" x1="0.5" y1="0" x2="0.5" y2="1">
+            <stop offset="0%" stop-color="#eef6ff"/>
+            <stop offset="100%" stop-color="#f8f9fa"/>
+        </linearGradient>
+
+        <!-- Gradient for the main gold wave, adding depth and light -->
+        <linearGradient id="goldGradient" x1="0.5" y1="0" x2="0.5" y2="1">
+            <stop offset="0%" stop-color="#f9b33a"/>
+            <stop offset="100%" stop-color="#f7a81b"/>
+        </linearGradient>
+
+        <!-- Gradient for the foreground blue wave, giving it a subtle shadow -->
+        <linearGradient id="blueGradient" x1="0.5" y1="0" x2="0.5" y2="1">
+            <stop offset="0%" stop-color="#005daa"/>
+            <stop offset="100%" stop-color="#004b8d"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Layer 1: The Sky (Background) -->
+    <rect width="1920" height="1080" fill="url(#skyGradient)" />
+
+    <!-- Layer 2: Distant, soft blue hills -->
+    <path d="M 0 750 C 400 700, 800 800, 1920 720 L 1920 1080 L 0 1080 Z" fill="#aaccf0" />
+
+    <!-- Layer 3: The main Gold Wave of Hope -->
+    <path d="M 0 850 C 600 750, 1200 900, 1920 820 L 1920 1080 L 0 1080 Z" fill="url(#goldGradient)" />
+
+    <!-- Layer 4: The Foreground Blue Wave of Service -->
+    <path d="M 0 950 C 500 900, 1100 1000, 1920 920 L 1920 1080 L 0 1080 Z" fill="url(#blueGradient)" />
+
+</svg>

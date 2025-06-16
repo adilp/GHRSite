@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  /* Rotary Official Colors */
-  --rotary-royal-blue: #003da5;
-  --rotary-gold: #f7a81b;
+  /* Rotary Official Colors - Updated to specs */
+  --rotary-blue: #005daa;  /* Primary blue */
+  --rotary-gold: #f7a81b;  /* Secondary gold */
   --rotary-azure: #019fcb;
   --rotary-sky-blue: #0080c0;
   
   /* Luxury Design System */
-  --background: #ffffff;
+  --background: #f9f9f9;   /* Off-white background */
   --background-secondary: #fafbfc;
   --foreground: #1a1a1a;
-  --primary: var(--rotary-royal-blue);
+  --primary: var(--rotary-blue);
   --accent: var(--rotary-gold);
   --secondary: var(--rotary-azure);
   
@@ -31,6 +31,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-rotary-blue: var(--rotary-blue);
+  --color-rotary-gold: var(--rotary-gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -48,7 +50,7 @@ body {
 }
 
 .rotary-gradient {
-  background: linear-gradient(135deg, var(--rotary-royal-blue) 0%, var(--rotary-azure) 100%);
+  background: linear-gradient(135deg, var(--rotary-blue) 0%, var(--rotary-azure) 100%);
 }
 
 .gold-gradient {
@@ -115,7 +117,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--rotary-royal-blue);
+  background: var(--rotary-blue);
   color: white;
 }
 
@@ -127,12 +129,12 @@ body {
 
 .btn-secondary {
   background: transparent;
-  color: var(--rotary-royal-blue);
-  border: 2px solid var(--rotary-royal-blue);
+  color: var(--rotary-blue);
+  border: 2px solid var(--rotary-blue);
 }
 
 .btn-secondary:hover {
-  background: var(--rotary-royal-blue);
+  background: var(--rotary-blue);
   color: white;
 }
 
@@ -150,4 +152,50 @@ body {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out;
+}
+
+/* New Utility Classes */
+.text-rotary-blue { 
+  color: var(--rotary-blue); 
+}
+
+.bg-rotary-blue { 
+  background-color: var(--rotary-blue); 
+}
+
+.bg-off-white { 
+  background-color: #f9f9f9; 
+}
+
+/* Section Spacing */
+.section-spacing {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding: 3rem 0;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+.font-serif { 
+  font-family: var(--font-playfair), serif; 
+}
+
+.font-sans { 
+  font-family: var(--font-lato), sans-serif; 
+}
+
+h1, h2, h3 { 
+  font-family: var(--font-playfair), serif; 
+}
+
+body { 
+  font-family: var(--font-lato), sans-serif; 
 }
