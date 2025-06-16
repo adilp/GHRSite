@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <footer className="relative">
@@ -8,9 +11,11 @@ export default function Footer() {
             {/* Column 1: Logo + Tagline */}
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <img
+                <Image
                   src="/rotary-international-7.svg"
                   alt="Rotary Logo"
+                  width={40}
+                  height={40}
                   className="w-10 h-10"
                 />
                 <h3 className="text-xl font-medium">Rotary Club</h3>
@@ -24,10 +29,10 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-medium mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-                <li><a href="/news" className="text-gray-300 hover:text-white transition-colors">News</a></li>
-                <li><a href="/events" className="text-gray-300 hover:text-white transition-colors">Events</a></li>
-                <li><a href="/projects" className="text-gray-300 hover:text-white transition-colors">Projects</a></li>
+                <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/news" className="text-gray-300 hover:text-white transition-colors">News</Link></li>
+                <li><Link href="/events" className="text-gray-300 hover:text-white transition-colors">Events</Link></li>
+                <li><Link href="/projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link></li>
               </ul>
             </div>
             

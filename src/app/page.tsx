@@ -64,7 +64,7 @@ export default function HomePage() {
                   friends, and leaders who share a passion for making a
                   difference through meaningful service projects, fellowship,
                   and lasting friendships. Our members come from all walks of
-                  life, united by our commitment to "Service Above Self" and our
+                  life, united by our commitment to &quot;Service Above Self&quot; and our
                   dedication to creating positive change both locally and
                   globally.
                 </p>

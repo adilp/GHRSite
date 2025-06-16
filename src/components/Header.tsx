@@ -1,18 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
-type HeaderProps = {
-  isLoggedIn?: boolean
-}
-
-export default function Header({ isLoggedIn = false }: HeaderProps) {
+export default function Header() {
   return (
     <header className='glass-effect absolute top-0 left-0 right-0 z-50 border-b border-gray-200/20'>
       <nav className='container mx-auto px-8 py-5 flex items-center'>
         {/* Logo - Left */}
         <Link href='/' className='flex items-center space-x-3 group'>
-          <img
+          <Image
             src='/rotary-international-7.svg'
             alt='Rotary International Wheel'
+            width={48}
+            height={48}
             className='w-12 h-12 transform group-hover:rotate-180 transition-transform duration-500'
           />
           <div className='flex flex-col'>
