@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function PocDashboardPage() {
   return (
     <>
-      <Header isLoggedIn={true} />
+      <Header />
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-4xl font-bold">Welcome, Member!</h1>
         <p className="text-xl text-gray-600 mt-2">This is your member dashboard.</p>

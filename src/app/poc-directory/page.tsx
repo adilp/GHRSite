@@ -4,7 +4,7 @@ import membersData from '@/mock-data/members.json';
 export default function PocDirectoryPage() {
   return (
     <>
-      <Header isLoggedIn={true} />
+      <Header />
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-4xl font-bold mb-8">Member Directory</h1>
         {/* Non-functional search/filter controls for UI display only */}

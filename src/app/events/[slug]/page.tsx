@@ -19,7 +19,7 @@ export default function EventDetailPage() {
 
   return (
     <>
-      <Header isLoggedIn={isLoggedIn} />
+      <Header />
       <div className="container mx-auto px-6 py-8">
         <article>
           <h1 className="text-4xl font-bold mb-2">{event.title}</h1>

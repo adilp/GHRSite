@@ -5,7 +5,7 @@ export default function PocProfilePage() {
   const myProfile = memberData[0]; // Just showing the first member as "me"
   return (
     <>
-      <Header isLoggedIn={true} />
+      <Header />
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-4xl font-bold mb-8">My Profile</h1>
         <div className="p-8 bg-white shadow-md rounded-lg">
