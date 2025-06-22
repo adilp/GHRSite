@@ -13,27 +13,49 @@ export default function HomePage() {
       <Header />
       <main className='min-h-screen'>
         {/* Hero Section */}
-        <section className='relative h-[50vh] w-full'>
+        <section className='relative h-[70vh] w-full overflow-hidden'>
           {/* Background image container */}
-          <div className='absolute inset-0 z-0 blur-[2px]'>
+          <div className='absolute inset-0 z-0'>
             <Image
               // src='/hero2.png'
               src='https://images.unsplash.com/photo-1735679356705-7c06b780c7a4?q=80&w=4240&auto=format&fit=crop'
               alt='Community volunteers'
               fill
-              className='object-cover object-center'
+              className='object-cover object-center scale-105 blur-[3px]'
               priority
             />
-            {/* Combined gradient: white fade at top, blue tint at bottom */}
-            <div className='absolute inset-0 bg-gradient-to-b from-white via-white/88 via-white/90 to-rotary-blue/40' />
+            {/* Darker gradient overlay for better text contrast */}
+            <div className='absolute inset-0 bg-gradient-to-b from-rotary-blue/20 via-rotary-blue/30 to-rotary-blue/60' />
+            <div className='absolute inset-0 bg-black/25' />
           </div>
 
           {/* Content */}
-          <div className='relative z-10 flex flex-col items-center justify-center h-full text-rotary-blue'>
-            <h1 className='text-6xl md:text-7xl font-sans mb-4 text-center'>
+          <div className='relative z-10 flex flex-col items-center justify-center h-full text-white px-4'>
+            
+            <h1 className='text-5xl md:text-7xl lg:text-8xl font-neo-sans font-bold mb-6 text-center drop-shadow-2xl'>
               Rotary Club of Greater Hoover
             </h1>
-            <p className='text-2xl md:text-3xl'>Service Above Self</p>
+            
+            <p className='text-2xl md:text-3xl lg:text-4xl font-light tracking-wider drop-shadow-lg mb-8'>
+              Service Above Self
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className='flex gap-4 mt-4'>
+              <button className='bg-rotary-gold text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all hover:scale-105 shadow-lg'>
+                Join Us
+              </button>
+              <button className='bg-white/20 backdrop-blur-sm text-white border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white/30 transition-all hover:scale-105'>
+                Learn More
+              </button>
+            </div>
+          </div>
+          
+          {/* Animated scroll indicator */}
+          <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
+            <svg className='w-6 h-6 text-white opacity-70' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M19 14l-7 7m0 0l-7-7m7 7V3' />
+            </svg>
           </div>
         </section>
 
