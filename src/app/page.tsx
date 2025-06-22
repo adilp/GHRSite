@@ -15,21 +15,22 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className='relative h-[50vh] w-full'>
           {/* Background image container */}
-          <div className='absolute inset-0 z-0'>
+          <div className='absolute inset-0 z-0 blur-[2px]'>
             <Image
-              src='/hero2.png'
+              // src='/hero2.png'
+              src='https://images.unsplash.com/photo-1735679356705-7c06b780c7a4?q=80&w=4240&auto=format&fit=crop'
               alt='Community volunteers'
               fill
               className='object-cover object-center'
               priority
             />
             {/* Combined gradient: white fade at top, blue tint at bottom */}
-            <div className='absolute inset-0 bg-gradient-to-b from-white via-white/60 via-white/20 to-rotary-blue/60' />
+            <div className='absolute inset-0 bg-gradient-to-b from-white via-white/88 via-white/90 to-rotary-blue/40' />
           </div>
 
           {/* Content */}
-          <div className='relative z-10 flex flex-col items-center justify-center h-full text-white'>
-            <h1 className='text-6xl md:text-7xl font-serif mb-4 text-center'>
+          <div className='relative z-10 flex flex-col items-center justify-center h-full text-rotary-blue'>
+            <h1 className='text-6xl md:text-7xl font-sans mb-4 text-center'>
               Rotary Club of Greater Hoover
             </h1>
             <p className='text-2xl md:text-3xl'>Service Above Self</p>
@@ -59,14 +60,14 @@ export default function HomePage() {
                   Connecting for Good
                 </h2>
                 <p className='text-gray-700 text-lg leading-relaxed'>
-                  For over a century, the Rotary Club of Greater Hoover has been
+                  The Rotary Club of Greater Hoover aims to be  
                   a beacon of service in our community. We are neighbors,
                   friends, and leaders who share a passion for making a
                   difference through meaningful service projects, fellowship,
                   and lasting friendships. Our members come from all walks of
-                  life, united by our commitment to &quot;Service Above Self&quot; and our
-                  dedication to creating positive change both locally and
-                  globally.
+                  life, united by our commitment to &quot;Service Above
+                  Self&quot; and our dedication to creating positive change both
+                  locally and globally.
                 </p>
               </div>
 
@@ -74,7 +75,8 @@ export default function HomePage() {
               <div className='grid grid-cols-2 gap-4'>
                 <div className='luxury-card overflow-hidden'>
                   <Image
-                    src='https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=300&h=200&fit=crop'
+                    // src='https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=300&h=200&fit=crop'
+                    src='https://images.unsplash.com/photo-1627655128406-0fb41ddf4155?q=300&w=200&auto=format&fit=crop'
                     alt='Club meeting'
                     width={300}
                     height={200}

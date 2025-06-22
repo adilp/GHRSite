@@ -6,20 +6,23 @@ export default function Header() {
     <header className='glass-effect absolute top-0 left-0 right-0 z-50 border-b border-gray-200/20'>
       <nav className='container mx-auto px-8 py-5 flex items-center'>
         {/* Logo - Left */}
-        <Link href='/' className='flex items-center space-x-3 group'>
+        <Link href='/' className='flex items-center group'>
+          <div className='flex flex-col text-right mr-1'>
+            <div className='text-sm text-rotary-blue font-medium font-neo-sans'>
+              Greater Hoover
+            </div>
+            <h1 className='text-3xl font-bold text-rotary-blue font-neo-sans -mt-1'>Rotary</h1>
+            <div className='text-sm text-rotary-blue font-medium font-neo-sans -mt-1'>
+              Club
+            </div>
+          </div>
           <Image
             src='/rotary-international-7.svg'
             alt='Rotary International Wheel'
-            width={48}
-            height={48}
-            className='w-12 h-12 transform group-hover:rotate-180 transition-transform duration-500'
+            width={56}
+            height={56}
+            className='w-14 h-14 transform group-hover:rotate-180 transition-transform duration-500'
           />
-          <div className='flex flex-col'>
-            <h1 className='text-2xl font-bold text-rotary-blue'>Rotary</h1>
-            <div className='text-xs text-rotary-blue font-medium -mt-1'>
-              Club of Greater Hoover
-            </div>
-          </div>
         </Link>
 
         {/* Navigation - Center */}
