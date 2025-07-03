@@ -33,7 +33,7 @@ export default function HomePage() {
           <div className='relative z-10 flex flex-col items-center justify-center h-full text-white px-4'>
             
             <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-neo-sans font-bold mb-4 md:mb-6 text-center drop-shadow-2xl px-4'>
-              Rotary Club of Greater Hoover
+              Greater Hoover Rotary Club
             </h1>
             
             <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-light tracking-wider drop-shadow-lg mb-6 md:mb-8'>
@@ -82,7 +82,7 @@ export default function HomePage() {
                   Connecting for Good
                 </h2>
                 <p className='text-gray-700 text-lg leading-relaxed'>
-                  The Rotary Club of Greater Hoover aims to be  
+                  The Greater Hoover Rotary Club aims to be  
                   a beacon of service in our community. We are neighbors,
                   friends, and leaders who share a passion for making a
                   difference through meaningful service projects, fellowship,
